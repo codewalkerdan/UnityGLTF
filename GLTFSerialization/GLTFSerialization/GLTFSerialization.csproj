@@ -15,17 +15,17 @@
     <Authors>Khronos Group</Authors>
     <Copyright></Copyright>
     <Description>C# glTF Serializer</Description>
-    <Company></Company>
+    <Company>Khronos Group</Company>
     <Product>GLTFSerialization</Product>
     <PackageId>GLTFSerialization</PackageId>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/KhronosGroup/UnityGLTF/blob/master/README.md</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/KhronosGroup/UnityGLTF/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/KhronosGroup/UnityGLTF</RepositoryUrl>
     <PackageIconUrl>https://github.com/KhronosGroup/glTF/blob/master/specification/figures/gltf.png</PackageIconUrl>
     <PackageTags>glTF 3D C#</PackageTags>
     <RootNamespace>GLTF</RootNamespace>
-    <Version>1.0.0-alpha</Version>
+    <Version>1.0.0</Version>
 
     <IsUAPTargetFramework Condition="$(TargetFramework.ToLower().StartsWith('uap10.0'))">true</IsUAPTargetFramework>
     <IsNETStandardTargetFramework Condition="$(TargetFramework.ToLower().StartsWith('netstandard'))">true</IsNETStandardTargetFramework>
@@ -33,6 +33,8 @@
     <ErrorReport>prompt</ErrorReport>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
+    <PackageReleaseNotes>Initial NuGet Package</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
@@ -69,7 +71,6 @@
         <ExcludedUnityPlayers>UAP</ExcludedUnityPlayers>
       </PropertyGroup>
       <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
         <PackageReference Include="Microsoft.Net.Compilers" Version="2.7.0">
           <IncludeAssets>all</IncludeAssets>
           <ExcludeAssets>contentFiles</ExcludeAssets>
@@ -94,5 +95,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
